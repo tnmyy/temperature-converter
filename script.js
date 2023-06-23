@@ -11,6 +11,7 @@ let kelvin = document.getElementById("kelvin");
 celsius.addEventListener("input", () => {
   let c2f = (parseFloat(celsius.value) * 9) / 5 + 32;
   fahrenheit.value = parseFloat(c2f.toFixed(2));
+  console.log(`Celsius to Fahrenheit - ${c2f.toFixed(2)}`);
 });
 
 // Celsius To Kelvin Function
@@ -18,6 +19,7 @@ celsius.addEventListener("input", () => {
 celsius.addEventListener("input", () => {
   let c2k = parseFloat(celsius.value) + 273.15;
   kelvin.value = parseFloat(c2k);
+  console.log(`Celsius to Kelvin - ${c2k.toFixed(2)}`);
 });
 
 // Fahrenheit to Celsius Function
@@ -25,6 +27,7 @@ celsius.addEventListener("input", () => {
 fahrenheit.addEventListener("input", () => {
   let f2c = ((parseFloat(fahrenheit.value) - 32) * 5) / 9;
   celsius.value = parseFloat(f2c.toFixed(2));
+  console.log(`Fahrenheit to Celsius - ${f2c.toFixed(2)}`);
 });
 
 // Fahrenheit to Kelvin Function
@@ -32,6 +35,7 @@ fahrenheit.addEventListener("input", () => {
 fahrenheit.addEventListener("input", () => {
   let f2k = ((parseFloat(fahrenheit.value) - 32) * 5) / 9 + 273.15;
   kelvin.value = parseFloat(f2k.toFixed(2));
+  console.log(`Fahrenheit to Kelvin - ${f2k.toFixed(2)}`);
 });
 
 // Kelvin to Celsius Function
@@ -39,6 +43,7 @@ fahrenheit.addEventListener("input", () => {
 kelvin.addEventListener("input", () => {
   let k2c = parseFloat(kelvin.value) - 273.15;
   celsius.value = parseFloat(k2c);
+  console.log(`Kelvin to Celsius - ${k2c.toFixed(2)}`);
 });
 
 // Kelvin to Fahrenheit Function
@@ -46,4 +51,5 @@ kelvin.addEventListener("input", () => {
 kelvin.addEventListener("input", () => {
   let k2f = ((parseFloat(kelvin.value) - 273.15) * 9) / 5 + 32;
   fahrenheit.value = parseFloat(k2f.toFixed(2));
+  console.log(`Kelvin to Fahrenheit - ${k2f.toFixed(2)}`);
 });
